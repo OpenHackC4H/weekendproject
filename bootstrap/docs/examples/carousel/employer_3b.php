@@ -120,19 +120,25 @@
                       </div>
                   </div>
 
+                  <div class="form-group">
+                      <label for="inputSalary" class= "control-label col-xs-2">Salary</label>
+                      <div class="col-xs-10">
+                        <input type="Salary" class="form-control" id="inputSalary" placeholder="Salary">
+                      </div>
+                  </div>
                   
                 </form>
 
 
                 <!-- Salary slider -->
-                <label for="inputTimeLength" class= "control-label col-xs-2">Salary Range</label>
+                <!-- <label for="inputTimeLength" class= "control-label col-xs-2">Salary Range</label>
                 <div class="col-xs-6">
                   <div class="range range-success">
                     <input type="range" name="range" min="100" max="30000" value="15000" onchange="rangeSuccess.value=value">
                     <output id="rangeSuccess">15000</output>
                     
                   </div>
-                </div>  
+                </div>   -->
                 
               <!-- <p>Every people in the world have right to get their job</p> -->
               

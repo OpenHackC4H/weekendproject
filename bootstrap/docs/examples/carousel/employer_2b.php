@@ -115,22 +115,22 @@
             <table class="table table-hover">
               <thead>
                   <tr>
-                      <th>For</th>
-                      <th>Subtitutable</th>
-                      <th>Non-Subtitutable</th>
+                      <th></th>
+                      <th>Short Term</th>
+                      <th>Long Term</th>
                   </tr>
               </thead>
               <tbody>
                   <tr>
-                      <td>High complex</td>
-                      <td>A</td>
-                      <td>B</td>
+                      <td>Expert</td>
+                      <td><button type="button" class="btn btn-primary">A</button></td>
+                      <td><button type="button" class="btn btn-primary">B</button></td>
                       
                   </tr>
                   <tr>
-                      <td>Low complex</td>
-                      <td>C</td>
-                      <td>D</td>
+                      <td>Novice</td>
+                      <td><button type="button" class="btn btn-primary">C</button></td>
+                      <td><button type="button" class="btn btn-primary">D</button></td>
                       
                   </tr>
                   
