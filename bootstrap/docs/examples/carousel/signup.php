@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<?php
-  session_start();
-?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -33,7 +30,6 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link href="justified-nav.css" rel="stylesheet">
-
 
   </head>
 <!-- NAVBAR
@@ -105,39 +101,10 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-    <div class="col-md-12 col-sm-12">
-      <form class="form-horizontal" role="form" action="JobSeeker.php" method="POST">
-                <div class="form-group">
-                    <input type="hidden" name="count" value="1" />
-                    <label class="control-label col-sm-3">Work Experience</label>                        
-                    <div class="col-sm-9">
-                          <input autocomplete="off" class="form-control" id="experience" name="experience" type="text" placeholder="separate by comma" data-items="8"/>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <label class="control-label col-sm-3">Skill</label>                        
-                    <div class="col-sm-9">
-                          <input autocomplete="off" class="form-control" id="skill" name="skill" type="text" placeholder="separate by comma" data-items="8"/>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <div class="col-sm-9 col-sm-offset-3">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">I accept <a href="#">terms</a>
-                            </label>
-                        </div>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <div class="col-sm-9 col-sm-offset-3">
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                    </div>
-                </div>
-            </form> <!-- /form -->
+     
 
       <hr class="featurette-divider">
-      </div>
+
       <!-- /END THE FEATURETTES -->
 
 
@@ -162,48 +129,3 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-<script type="text/javascript">
-$(document).ready(function(){
-    var next = 1;
-    $(".add-more").click(function(e){
-        e.preventDefault();
-        var addto = "#field" + next;
-        var addRemove = "#field" + (next);
-        next = next + 1;
-        var newIn = '<input autocomplete="off" class="form-control" id="field' + next + '" name="field' + next + '" type="text">';
-        var newInput = $(newIn);
-        var removeBtn = '<button id="remove' + (next - 1) + '" class="btn btn-danger remove-me" >-</button></div><div id="field">';
-        var removeButton = $(removeBtn);
-        $(addto).after(newInput);
-        $(addRemove).after(removeButton);
-        $("#field" + next).attr('data-source',$(addto).attr('data-source'));
-        $("#count").val(next);  
-        
-            $('.remove-me').click(function(e){
-                e.preventDefault();
-                var fieldNum = this.id.charAt(this.id.length-1);
-                var fieldID = "#field" + fieldNum;
-                $(this).remove();
-                $(fieldID).remove();
-            });
-    });
-});
-</script>
-<?php
-  
-  if(isset($_POST["experience"]) && isset($_POST['skill']))
-  {
-    $data = $_POST["experience"];
-    $datav = $_POST["skill"];
-
-    $dataexperience = explode(",",$data);
-    $dataskill = explode(",",$datav);
-
-    $_SESSION['experience'] = $dataexperience;
-    $_SESSION['skill'] = $dataskill;
-
-    echo ("<script>location.href='TypeofJob.php'</script>");
-
-  }
-?>
-

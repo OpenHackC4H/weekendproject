@@ -93,7 +93,7 @@
 
 
       <div class="jumbotron">
-        <h1>Personal Information</h1>
+        <h1>Job Type</h1>
       </div>
 
 
@@ -106,44 +106,42 @@
 
       <!-- Three columns of text below the carousel -->
     <div class="col-md-12 col-sm-12">
-      <form class="form-horizontal" role="form" action="JobSeeker.php" method="POST">
-                <div class="form-group">
-                    <input type="hidden" name="count" value="1" />
-                    <label class="control-label col-sm-3">Work Experience</label>                        
-                    <div class="col-sm-9">
-                          <input autocomplete="off" class="form-control" id="experience" name="experience" type="text" placeholder="separate by comma" data-items="8"/>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <label class="control-label col-sm-3">Skill</label>                        
-                    <div class="col-sm-9">
-                          <input autocomplete="off" class="form-control" id="skill" name="skill" type="text" placeholder="separate by comma" data-items="8"/>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <div class="col-sm-9 col-sm-offset-3">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">I accept <a href="#">terms</a>
-                            </label>
-                        </div>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <div class="col-sm-9 col-sm-offset-3">
-                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                    </div>
-                </div>
-            </form> <!-- /form -->
+     <table class="table table-striped table-hover table-users">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Short-Term</th>
+              <th>Long Term</th>
+            </tr>
+          </thead>
 
-      <hr class="featurette-divider">
+          <tbody>
+            
+            <tr>
+                        
+              <th>Expert</th>
+             
+              <td><a class="btn mini blue-stripe" href="{site_url()}admin/editFront/1">A</a></td>
+
+                        <td><a href="#" class="confirm-delete btn mini red-stripe" role="button" data-title="johnny" data-id="1">B</a></td>
+                    </tr>
+          <tr>
+                        
+              <th>Novice</th>
+              <td><a class="btn mini blue-stripe" href="map.php">C</a></td>
+
+                        <td><a href="#" class="confirm-delete btn mini red-stripe" role="button" data-title="kitty" data-id="2">D</a></td>
+                    </tr>
+                
+                 </tbody>
+
+        </table>
       </div>
       <!-- /END THE FEATURETTES -->
 
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
@@ -190,20 +188,6 @@ $(document).ready(function(){
 });
 </script>
 <?php
-  
-  if(isset($_POST["experience"]) && isset($_POST['skill']))
-  {
-    $data = $_POST["experience"];
-    $datav = $_POST["skill"];
-
-    $dataexperience = explode(",",$data);
-    $dataskill = explode(",",$datav);
-
-    $_SESSION['experience'] = $dataexperience;
-    $_SESSION['skill'] = $dataskill;
-
-    echo ("<script>location.href='TypeofJob.php'</script>");
-
-  }
+  $data = $_SESSION['skill'];
 ?>
 

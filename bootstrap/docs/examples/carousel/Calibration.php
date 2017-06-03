@@ -93,7 +93,7 @@
 
 
       <div class="jumbotron">
-        <h1>Personal Information</h1>
+        <h1>Suggestion Work</h1>
       </div>
 
 
@@ -120,16 +120,7 @@
                           <input autocomplete="off" class="form-control" id="skill" name="skill" type="text" placeholder="separate by comma" data-items="8"/>
                     </div>
                 </div> <!-- /.form-group -->
-                <div class="form-group">
-                    <div class="col-sm-9 col-sm-offset-3">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">I accept <a href="#">terms</a>
-                            </label>
-                        </div>
-                    </div>
-                </div> <!-- /.form-group -->
-                <div class="form-group">
+               <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
                     </div>
@@ -190,20 +181,6 @@ $(document).ready(function(){
 });
 </script>
 <?php
-  
-  if(isset($_POST["experience"]) && isset($_POST['skill']))
-  {
-    $data = $_POST["experience"];
-    $datav = $_POST["skill"];
-
-    $dataexperience = explode(",",$data);
-    $dataskill = explode(",",$datav);
-
-    $_SESSION['experience'] = $dataexperience;
-    $_SESSION['skill'] = $dataskill;
-
-    echo ("<script>location.href='TypeofJob.php'</script>");
-
-  }
+  $data = $_SESSION['skill'];
 ?>
 
