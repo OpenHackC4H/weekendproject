@@ -65,6 +65,19 @@
                   </ul>
                 </li>
               </ul>
+               <form id="signin" name = "loginform" class="navbar-form navbar-right" role="form" onsubmit="validateForm()" method="post">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="email" id="inputEmail" class="form-control"  placeholder="Email address" required autofocus>                                        
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>                                        
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                   </form>
             </div>
           </div>
         </nav>
@@ -199,7 +212,6 @@
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
