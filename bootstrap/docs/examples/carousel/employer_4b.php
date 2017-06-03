@@ -92,24 +92,31 @@
         </div>
         <div class = "col-lg-12">  
 
-                   <h1>Candidate should</h1>
-                   <br></br>
+        <div class="jumbotron">
+          <center>
+            <h1>Candidate Criteria</h1>
+          </center>>  
+        </div>
+
+                   <!-- <h1>Candidate should</h1>
+                   <br></br> -->
 
                 <div class="checkbox">
-                      <label><input type="checkbox">Degree Required</label>
-                      <label><input type="checkbox">Experience Needed</label>
-                      <label><input type="checkbox">Disabillity Support</label>
+                      <label><input type="checkbox">Degree Required</label><br></br>
+                      <label><input type="checkbox">Experience Needed</label><br></br>
+                      <label><input type="checkbox">Disabillity Support</label><br></br>
                 </div>   
 
                 <form class = "from-horizontal">
                   
                   <div class="form-group">
                       <button type="button" class="btn btn-primary btn-lg">Yes</button>
-                      <button type="button" class="btn btn-danger btn-lg">No</button> 
-                      <div class="col-xs-10">
+                      <!-- <button type="button" class="btn btn-danger btn-lg">No</button>  -->
+                      <div class="col-xs-5">
                         <!-- <input type="companyProfile" class="form-control" id="inputCompanyProfile" placeholder="Company Profile"> -->
                         <textarea rows="3" class="form-control" id="inputCompanyProfile" placeholder="Candidate Profile"></textarea>
                       </div>
+                      <button type="button" class="btn btn-danger btn-lg">No</button> 
                   </div>
 
                 </form>

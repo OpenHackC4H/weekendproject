@@ -103,25 +103,30 @@
         
         </div>
         <div class = "col-lg-12">  
-
-                   <h1>Offer a Job</h1>
+            <div class="jumbotron">
+              <center>
+                <h1>Offer a Job</h1>
+              </center>>  
+            </div>
+                   <!-- <h1>Offer a Job</h1>
                    <br></br>
-
+ -->
                 <form class = "from-horizontal">
                   <div class="form-group">
-                      <label for="inputCompanyName" class= "control-label col-xs-2">Company Name</label>
+               <!--    <label class="control-label col-sm-2" for="email">Email:</label> -->
+                      <label class= "control-label col-sm-2" for="inputcompanyName">Company Name:</label>
                       <div class="col-xs-10">
                         <input type="companyName" class="form-control" id="companyName" placeholder="Company Name">
                       </div>
                   </div>
                   <div class="form-group">
-                      <label for="inputCompanyID" class= "control-label col-xs-2">Company ID</label>
+                      <label for="inputCompanyID" class= "control-label col-xs-2">Company ID:</label>
                       <div class="col-xs-10">
                         <input type="companyID" class="form-control" id="inputCompanyID" placeholder="Company ID">
                       </div>
                   </div>
                   <div class="form-group">
-                      <label for="inputCompanyProfile" class= "control-label col-xs-2">Company Profile</label>
+                      <label for="inputCompanyProfile" class= "control-label col-xs-2">Company Profile:</label>
                       <div class="col-xs-10">
                         <!-- <input type="companyProfile" class="form-control" id="inputCompanyProfile" placeholder="Company Profile"> -->
                         <textarea rows="3" class="form-control" id="inputCompanyProfile" placeholder="Company Profile"></textarea>
@@ -129,14 +134,14 @@
                   </div>
 
                   <div class="form-group">
-                      <label for="inputCompanyWebsite" class= "control-label col-xs-2">Website</label>
+                      <label for="inputCompanyWebsite" class= "control-label col-xs-2">Website:</label>
                       <div class="col-xs-10">
                         <input type="companyWebsite" class="form-control" id="inputCompanyWebsite" placeholder="Company Website">
                       </div>
                   </div>
-                  <div class="checkbox">
+                  <!-- <div class="checkbox">
                       <label><input type="checkbox"> Remember me</label>
-                  </div>
+                  </div> -->
                   <!-- <button type="submit" class="btn btn-primary">Login</button> -->
                 </form>
               <!-- <p>Every people in the world have right to get their job</p> -->

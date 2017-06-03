@@ -92,13 +92,19 @@
         </div>
         <div class = "col-lg-12">  
 
-                   <h1>Job Specification</h1>
-                   <br></br>
+        <div class="jumbotron">
+          <center>
+            <h1>Job Specification</h1>
+          </center>>  
+        </div>
+
+                   <!-- <h1>Job Specification</h1>
+                   <br></br> -->
 
                 <form class = "from-horizontal">
                   
                   <div class="form-group">
-                      <label for="inputJobDescription" class= "control-label col-xs-2">Job Description</label>
+                      <label for="inputJobDescription" class= "control-label col-xs-2">Job Description:</label>
                       <div class="col-xs-10">
                         <!-- <input type="companyProfile" class="form-control" id="inputCompanyProfile" placeholder="Company Profile"> -->
                         <textarea rows="3" class="form-control" id="inputCompanyProfile" placeholder="Job Description"></textarea>
@@ -106,7 +112,7 @@
                   </div>
 
                   <div class="form-group">
-                      <label for="inputTimeLength" class= "control-label col-xs-2">Time Length</label>
+                      <label for="inputTimeLength" class= "control-label col-xs-2">Time Length:</label>
                       <div class="col-xs-10">
                         <input type="TimeLength" class="form-control" id="inputTimeLength" placeholder="Hours">
                       </div>
@@ -114,14 +120,14 @@
                   
 
                   <div class="form-group">
-                      <label for="inputAppDeadline" class= "control-label col-xs-2">Application Deadline</label>
+                      <label for="inputAppDeadline" class= "control-label col-xs-2">Application Deadline:</label>
                       <div class="col-xs-10">
                         <input type="AppDeadline" class="form-control" id="inputAppDeadline" placeholder="Application Deadline">
                       </div>
                   </div>
 
                   <div class="form-group">
-                      <label for="inputSalary" class= "control-label col-xs-2">Salary</label>
+                      <label for="inputSalary" class= "control-label col-xs-2">Salary:</label>
                       <div class="col-xs-10">
                         <input type="Salary" class="form-control" id="inputSalary" placeholder="Salary">
                       </div>

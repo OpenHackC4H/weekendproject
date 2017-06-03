@@ -109,8 +109,15 @@
         
         </div>
       <div class = "col-lg-12">
-        <h1>Which type of job are you offering</h1>
-        <br></br>
+
+        <div class="jumbotron">
+          <center>
+            <h1>Job Type</h1>
+          </center>>  
+        </div>
+
+        <!-- <h1>Which type of job are you offering</h1>
+        <br></br> -->
 
             <table class="table table-hover">
               <thead>
