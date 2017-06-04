@@ -1,5 +1,4 @@
-# weekendproject
-
+# JobHunter
 Team Name = IGEM crocin 2017 in TheWeekendProject
 
 Choosen Case = case 3 : How might technology help us to avoid discrimination in hiring practices?
